@@ -6,13 +6,12 @@ I was tasked to make a deployed webpage for a working password generator with pr
 
 ## Deployed Website
 
-<img src="assets\images\screenshot.png">
+<img src="Assets\password.png">
 
-<a href="https://dmcarver01611.github.io/02-Portfolio-Projects/">Link to Webpage</a>
+<a href="https://dmcarver01611.github.io/03-Password-Generator/">Link to Webpage</a>
 
-## Work Done
+## Website Functions
 
--Added a working nav bar
--Added an about me section
--Added project section that enlarges on hover
--Added a contact section and form
+-Prompts that allow customization of generated password <br />
+-Allowance of 8-128 characters <br />
+-Button interface to prompt generation
