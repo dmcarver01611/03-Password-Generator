@@ -14,6 +14,17 @@ var inputArray = [];
 
 //Prompts
 var amntCharacters = prompt ("How many character's between 8-128 for your password?");
+//Prevent invalid # of characters
+console.log(amntCharacters < 8, amntCharacters < 128, (amntCharacters < 8 || amntCharacters > 128), typeof amntCharacters !== Number, typeof amntCharacters !== "number", typeof amntCharacters, parseInt(amntCharacters));
+
+if (!parseInt(amntCharacters)){
+  return "Please enter a valid character";
+}
+
+if (amntCharacters < 8 || amntCharacters > 128){
+  return "Please enter a valid number between 8-128";
+}
+
 var numbers = confirm ("Would you like numbers in your password?");
 var special = confirm ("Would you like special characters in your password?");
 var uppercase = confirm ("Would you like uppercase characters in your password?");
@@ -38,7 +49,6 @@ if (uppercase){
 if (lowercase){
   outputArray = outputArray.concat(lowercaseArray);
 }
-console.log(outputArray)
 
 //For Loop for Password Length
 for (var i = 0; i < amntCharacters; i++) {
